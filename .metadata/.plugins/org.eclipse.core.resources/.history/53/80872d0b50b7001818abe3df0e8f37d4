@@ -1,0 +1,15 @@
+package com.example.demo.dao;
+
+import com.example.demo.entity.User;
+
+public interface UserDao {
+	int deleteByPK(Integer id);
+	
+	int insert(User user);
+	
+	int insertSelective(User user);
+	
+	User selectBYPK(Integer id);
+	
+	
+}
